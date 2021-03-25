@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    padding: 20px 0 20px 20px;
+    justify-content: space-between;
+    height: 20vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav, .social-links, .logo {
+    padding: 20px;
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+    li {
+        list-style: none;
+    }
+}
+
+.social-links {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:after, .social-links a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px $yellow;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+nav a:hover:after, .social-links a:hover:after {
+    transform: scaleX(1);   
+}

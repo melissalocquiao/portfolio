@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: $font;
+    margin: 0;
+    height: 100vh;
+    color: $grey;
+    background-color: $blue;
+    overflow: hidden;
+  }
+
+  h1, h2, h3, p {
+    font-family: $font;
+    color: $grey;
+  }
+
+  h1 {
+    font-size: 6.25vw;
+    line-height: 70px;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+  
+  h3 {
+    font-size: 2vw;
+    font-weight: 400;
+  }
+
+  i {
+    font-size: 2.2rem;
+    cursor: pointer;
+  } 
+
+  a {
+    text-transform: uppercase;
+    color: $grey;
+    text-decoration: none;
+  }
+
+  img { 
+    width: 100%;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  section {
+    width: 100vw;
+    height: 100vh;
+    top: 20vh;
+    position: relative;
+  }
+
+  .container {
+    display: flex;
+    width: 500vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+
+  .horizontal-scroll {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display:none;
+  }
+
+  .about, .skills, .projects, .contact {
+    h2 {
+      margin: 0;
+    }
+  }
