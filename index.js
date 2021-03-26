@@ -52,8 +52,8 @@ portfolioApp.addListeners = () => {
         homeText.classList.remove('animate-left');
         homeImage.classList.remove('animate-bottom');
         aboutImage.classList.remove('animate-bottom');
-        aboutHeading.classList.remove('animate-bottom');
-        aboutText.classList.remove('animate-bottom');
+        aboutHeading.classList.remove('animate-right');
+        aboutText.classList.remove('animate-right');
         skillsText.classList.remove('animate-top');
         educationText.classList.remove('animate-bottom');
         projectLaptop.classList.remove('animate-left');
@@ -78,8 +78,8 @@ portfolioApp.addListeners = () => {
             section.scrollIntoView({ behavior: "smooth" });
 
             aboutImage.classList.remove('animate-bottom');
-            aboutHeading.classList.remove('animate-bottom');
-            aboutText.classList.remove('animate-bottom');
+            aboutHeading.classList.remove('animate-right');
+            aboutText.classList.remove('animate-right');
 
             skillsText.classList.remove('animate-top');
             educationText.classList.remove('animate-bottom');
@@ -94,8 +94,8 @@ portfolioApp.addListeners = () => {
 
             if (link === '.about') {
                 aboutImage.classList.add('animate-bottom');
-                aboutHeading.classList.add('animate-bottom');
-                aboutText.classList.add('animate-bottom');
+                aboutHeading.classList.add('animate-right');
+                aboutText.classList.add('animate-right');
             }
             if (link === '.skills') {
                 skillsText.classList.add('animate-top');
