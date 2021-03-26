@@ -24,10 +24,13 @@ nav, .social-links, .logo, .menu {
 
 nav {
     width: 50%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    padding: 20px;
+    
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
     
     li {
         list-style: none;
@@ -42,7 +45,7 @@ nav {
     }
 
     @include large-phoneMQ {
-        // display: none;
+        display: none;
     }
 }
 
@@ -52,8 +55,14 @@ nav {
     i {
         font-size: 3rem;
     }
+    
     @include large-phoneMQ {
         display: block;
+    }
+    
+    .open-button {
+        background-color: transparent;
+        border: none;
     }
 }
 

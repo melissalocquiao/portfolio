@@ -1,0 +1,32 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $white;
+    transition: 0.7s;
+    padding-top: 60px;
+    text-align: center;
+
+    i {
+        font-size: 8vw;
+    }
+
+    a {
+        padding: 10px;
+        text-decoration: none;
+        color: $grey;
+        display: block;
+        transition: 0.3s;
+        font-size: 6vw;
+    }
+
+    .close-button {
+        background-color: transparent;
+        border: none;
+        padding-bottom: 60px;
+    }
+}
+

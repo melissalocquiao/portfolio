@@ -78,7 +78,7 @@
 
   .skills, .projects {
     h2 {
-        text-align: center;
+      text-align: center;
     }
   }
 
@@ -148,9 +148,8 @@
     border: 0;
     border-radius: 5px;
     color: $grey;
-  
   }
 
   .button:hover, .button:focus {
-    background-color: darken($yellow, 5%);
+    background-color: darken($yellow, 10%);
   }

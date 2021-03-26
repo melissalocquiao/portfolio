@@ -236,6 +236,7 @@ html {
   overflow: hidden;
 }
 
+/*Colour Palette*/
 .animate-left {
   -webkit-animation: 800ms ease-out 0s 1 slideFromLeft;
           animation: 800ms ease-out 0s 1 slideFromLeft;
@@ -532,7 +533,7 @@ section {
 }
 
 .button:hover, .button:focus {
-  background-color: #ffdb4d;
+  background-color: #ffd633;
 }
 
 header {
@@ -567,6 +568,9 @@ nav, .social-links, .logo, .menu {
 
 nav {
   width: 50%;
+}
+
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,6 +596,12 @@ nav li a {
   }
 }
 
+@media (max-width: 750px) {
+  nav {
+    display: none;
+  }
+}
+
 .menu {
   display: none;
 }
@@ -604,6 +614,11 @@ nav li a {
   .menu {
     display: block;
   }
+}
+
+.menu .open-button {
+  background-color: transparent;
+  border: none;
 }
 
 .social-links {
@@ -872,7 +887,7 @@ nav li a {
 
 .skills-container {
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .skill-container {
@@ -912,7 +927,7 @@ nav li a {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
-  margin: 0 15px;
+  margin: 5px 15px;
 }
 
 @media (max-width: 1024px) {
@@ -1338,4 +1353,38 @@ form input[type=text] {
 
 form textarea {
   border: 3px solid #ffe066;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.sidebar i {
+  font-size: 8vw;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  color: #50514f;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 6vw;
+}
+
+.sidebar .close-button {
+  background-color: transparent;
+  border: none;
+  padding-bottom: 60px;
 }

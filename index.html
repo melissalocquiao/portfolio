@@ -4,36 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melissa Locquiao</title>
+    <title>All About Melissa</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/7467157e85.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!--Header-->
     <header>
         <div class="logo">
             <a href="#home">
                 <img src="./assets/logo.png" alt="melissa locquiao's logo">
             </a>
         </div>
+
+        <!--Nav-->
         <nav>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
         </nav>
+        <!--End of Nav-->
+
         <div class="menu">
-            <i class="fas fa-bars"></i>
+            <button class="open-button" onclick="portfolioApp.openSideBar()">
+                <i class="fas fa-bars"></i></button>
         </div>
+
+        <!--Social Links-->
         <div class="social-links">
             <a href="https://github.com/melissalocquiao"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/melissalocquiao/"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/melissalocquiao"><i class="fab fa-twitter"></i></a>
         </div>
+        <!--End of Social Links-->
+
+        <!--Side Bar Nav-->
+        <div class="sidebar" id="sidebar">
+            <button class="close-button" onclick="portfolioApp.closeSideBar()"><i class="fas fa-times"></i></button>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+        <!--Side Bar Nav-->
     </header>
+    <!--End of Header-->
+
     <main>
         <div class="horizontal-scroll">
             <div class="container">
+                <!--Home Section-->
                 <section class="home" id="home">
                     <div class="text-container animate-left">
                         <h2><span class="light-heading">Hello!</span></h2>
@@ -41,9 +66,12 @@
                         <h3>Front End Web Developer</h3>
                     </div>
                     <div class="img-container animate-bottom">
-                        <img src="./assets/profile-home.png" alt="picture of melissa">
+                        <img src="./assets/profile-home.png" alt="melissa in white top">
                     </div>
                 </section>
+                <!--End of Home Section-->
+
+                <!--About Section-->
                 <section class="about" id="about">
                     <div class="wrapper">
                         <h2><span class="underline">About Me</span></h2>
@@ -63,28 +91,34 @@
                         </div>
                     </div>
                 </section>
+                <!--End of About Section-->
+
+                <!--Skills Section-->
                 <section class="skills" id="skills">
                     <div class="flex-column wrapper">
+                        <!--Skills Container-->
                         <div class="skills-container">
                             <h2><span class="underline">Skills</span></h2>
                             <div class="skill-container">
-                                <img src="./assets/html-icon.png" alt="">
-                                <img src="./assets/css-icon.png" alt="">
-                                <img src="./assets/sass-icon.png" alt="">
-                                <img src="./assets/javascript-icon.png" alt="">
-                                <img src="./assets/jquery-icon.png" alt="">
-                                <img src="./assets/responsive-icon.png" alt="">
-                                <img src="./assets/accessibility-icon.png" alt="">
-                                <img src="./assets/git-icon.png" alt="">
-                                <img src="./assets/react-icon.png" alt="">
-                                <img src="./assets/api-icon.png" alt="">
+                                <img src="./assets/html-icon.png" alt="HTML5 icon">
+                                <img src="./assets/css-icon.png" alt="CSS Icon">
+                                <img src="./assets/sass-icon.png" alt="SASS Icon">
+                                <img src="./assets/javascript-icon.png" alt="Javascript Icon">
+                                <img src="./assets/jquery-icon.png" alt="jQuery Icon">
+                                <img src="./assets/responsive-icon.png" alt="Responsive Design Icon">
+                                <img src="./assets/accessibility-icon.png" alt="Accessibility Icon">
+                                <img src="./assets/git-icon.png" alt="Git Icon">
+                                <img src="./assets/react-icon.png" alt="React Icon">
+                                <img src="./assets/api-icon.png" alt="API Icon">
                                 <img src="./assets/firebase-icon.png" alt="">
-                                <img src="./assets/java-icon.png" alt="">
-                                <img src="./assets/sql-icon.png" alt="">
-                                <img src="./assets/c-icon.png" alt="">
+                                <img src="./assets/java-icon.png" alt="Java Icon">
+                                <img src="./assets/sql-icon.png" alt="SQL Icon">
+                                <img src="./assets/c-icon.png" alt="C++ Icon">
                             </div>
                         </div>
+                        <!--End of Skills Container-->
 
+                        <!--Education Container-->
                         <div class="education-wrapper">
                             <h2><span class="underline">Education</span></h2>
                             <div class="education-container">
@@ -100,11 +134,17 @@
                                 </div>
                             </div>
                         </div>
+                        <!--End of Education Container-->
                     </div>
                 </section>
+                <!--Skills Section-->
+
+                <!--Projects Section-->
                 <section class="projects" id="projects">
                     <div class="wrapper">
                         <h2><span class="underline">Projects</span></h2>
+
+                        <!--Projects Container-->
                         <div class="projects-container">
                             <div class="project-container laptop">
                                 <a href="https://mels-cookie-dough-co-shop.netlify.com">
@@ -114,15 +154,17 @@
                                     <h3><span class="underline">Mel's Shop</span></h3>
                                     <div class="links">
                                         <p><a href="https://mels-cookie-dough-co-shop.netlify.com">Website</a></p>
-                                        <p><a href="https://github.com/melissalocquiao/melissa-locquiao-project-3">Github</a></p>
+                                        <p><a
+                                                href="https://github.com/melissalocquiao/melissa-locquiao-project-3">Github</a>
+                                        </p>
                                     </div>
                                     <div class="icons">
-                                        <img src="./assets/javascript-icon.png" alt="javascript">
-                                        <img src="./assets/firebase-icon.png" alt="firebase">
+                                        <img src="./assets/javascript-icon.png" alt="javascript icon">
+                                        <img src="./assets/firebase-icon.png" alt="firebase icon">
                                         <img src="./assets/react-icon.png" alt="react">
-                                        <img src="./assets/responsive-icon.png" alt="responsive design">
+                                        <img src="./assets/responsive-icon.png" alt="responsive design icon">
                                     </div>
-                                    
+
                                     <p>Mel's Cookie Dough Co. is an ecommerce shop where you can order my desserts and
                                         add and remove items from your cart.</p>
                                 </div>
@@ -135,13 +177,15 @@
                                     <h3><span class="underline">Popsipoll</span></h3>
                                     <div class="links">
                                         <p><a href="https://popsipoll.netlify.com">Website</a></p>
-                                        <p><a href="https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll">Github</a></p>
+                                        <p><a
+                                                href="https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll">Github</a>
+                                        </p>
                                     </div>
                                     <div class="icons">
-                                        <img src="./assets/react-icon.png" alt="react">
-                                        <img src="./assets/firebase-icon.png" alt="firebase">
-                                        <img src="./assets/javascript-icon.png" alt="javascript">
-                                        <img src="./assets/responsive-icon.png" alt="responsive design">
+                                        <img src="./assets/react-icon.png" alt="react icon">
+                                        <img src="./assets/firebase-icon.png" alt="firebase icon">
+                                        <img src="./assets/javascript-icon.png" alt="javascript icon">
+                                        <img src="./assets/responsive-icon.png" alt="responsive design icon">
                                     </div>
                                     <p>Created with <a href="https://camduffin.com">Cam</a>, <a
                                             href="https://jakeisbaek.com">Jake</a>, <a
@@ -157,13 +201,15 @@
                                 <div class="text-container">
                                     <h3><span class="underline">Flix Finder</span></h3>
                                     <div class="links">
-                                        <p><a href="https://maryam-melissa-project-2.netlify.com/landingpage">Website</a></p>
+                                        <p><a
+                                                href="https://maryam-melissa-project-2.netlify.com/landingpage">Website</a>
+                                        </p>
                                         <p><a href="https://github.com/maryam-melissa/project-2">Github</a></p>
                                     </div>
                                     <div class="icons">
-                                        <img src="./assets/sass-icon.png" alt="sass">
-                                        <img src="./assets/responsive-icon.png" alt="responsive design">
-                                        <img src="./assets/javascript-icon.png" alt="sass">
+                                        <img src="./assets/sass-icon.png" alt="sass icon">
+                                        <img src="./assets/responsive-icon.png" alt="responsive design icon">
+                                        <img src="./assets/javascript-icon.png" alt="sass icon">
                                     </div>
                                     <p>Created with <a href="https://maryamshahnawaz.com">Maryam</a>.</p>
                                     <p>Flix Finder is a website created to find movies with your favorite actor and
@@ -171,8 +217,12 @@
                                 </div>
                             </div>
                         </div>
+                        <!--End of Projects Container-->
                     </div>
                 </section>
+                <!--End of Projects Section-->
+
+                <!--Contact Section-->
                 <section class="contact" id="contact">
                     <div class="wrapper">
                         <h2><span class="underline">Contact</span></h2>
@@ -201,13 +251,13 @@
                             <form method="POST" class="form" name="contact" data-netlify="true" id="form">
                                 <div class="input-container">
                                     <label for="name" class="visuallyHidden">Name</label>
-                                    <input type="text" name="name" id="name" placeholder="Name">
+                                    <input type="text" name="name" id="name" placeholder="Name" required>
                                 </div>
                                 <div class="input-container">
                                     <label for="email" class="visuallyHidden">Email</label>
-                                    <input type="text" placeholder="Email" id="email">
+                                    <input type="text" placeholder="Email" id="email" required>
                                 </div>
-                                <textarea name="comment" rows="5" id="comment" placeholder="Comment"></textarea>
+                                <textarea name="comment" rows="5" id="comment" placeholder="Comment" required></textarea>
                                 <div class="submit-button">
                                     <input class="button" type="submit" value="Let's Talk">
                                 </div>
@@ -215,11 +265,16 @@
                         </div>
                     </div>
                 </section>
+                <!--End of Contact Section-->
 
             </div>
         </div>
     </main>
+    <!--End of Main-->
+
+    <!--Import Javascript File-->
     <script src="index.js"></script>
+
 </body>
 
 </html>
