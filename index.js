@@ -3,25 +3,25 @@ const portfolioApp = {};
 const aboutButton = document.querySelector('.about .button');
 
 portfolioApp.goToContact = () => {
-    aboutButton.addEventListener('click', function(event){
+    aboutButton.addEventListener('click', function (event) {
         event.preventDefault();
         const contactSection = document.querySelector('.contact');
         contactSection.scrollIntoView({ behavior: "smooth" });
-    }) 
+    })
 }
 
 document.querySelector("form").addEventListener("submit", portfolioApp.handleSubmit);
 
 portfolioApp.handleSubmit = (e) => {
-  e.preventDefault()
-  let myForm = document.getElementById('form');
-  let formData = new FormData(myForm)
-  fetch('/', {
-    method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
+    e.preventDefault()
+    let myForm = document.getElementById('form');
+    let formData = new FormData(myForm)
+    fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+        alert(error))
 }
 
 portfolioApp.addListeners = () => {
@@ -44,7 +44,7 @@ portfolioApp.addListeners = () => {
     const contactHeading = document.querySelector('.contact h2');
     const contactImage = document.querySelector('.contact .contact-container');
     const contactForm = document.querySelector('.contact .form');
-    
+
 
     home.addEventListener('click', function (event) {
         event.preventDefault();
@@ -54,8 +54,8 @@ portfolioApp.addListeners = () => {
         aboutImage.classList.remove('animate-bottom');
         aboutHeading.classList.remove('animate-bottom');
         aboutText.classList.remove('animate-bottom');
-        skillsText.classList.remove('animate-left');
-        educationText.classList.remove('animate-right');
+        skillsText.classList.remove('animate-top');
+        educationText.classList.remove('animate-bottom');
         projectLaptop.classList.remove('animate-left');
         projectIpad.classList.remove('animate-bottom');
         projectDesktop.classList.remove('animate-right');
@@ -81,8 +81,8 @@ portfolioApp.addListeners = () => {
             aboutHeading.classList.remove('animate-bottom');
             aboutText.classList.remove('animate-bottom');
 
-            skillsText.classList.remove('animate-left');
-            educationText.classList.remove('animate-right');
+            skillsText.classList.remove('animate-top');
+            educationText.classList.remove('animate-bottom');
 
             projectLaptop.classList.remove('animate-left');
             projectIpad.classList.remove('animate-bottom');
@@ -98,8 +98,8 @@ portfolioApp.addListeners = () => {
                 aboutText.classList.add('animate-bottom');
             }
             if (link === '.skills') {
-                skillsText.classList.add('animate-left');
-                educationText.classList.add('animate-right');
+                skillsText.classList.add('animate-top');
+                educationText.classList.add('animate-bottom');
             }
             if (link === '.projects') {
                 projectLaptop.classList.add('animate-left');

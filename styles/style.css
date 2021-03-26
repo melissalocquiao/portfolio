@@ -251,6 +251,11 @@ html {
           animation: 800ms ease-out 0s 1 slideFromRight;
 }
 
+.animate-top {
+  -webkit-animation: 800ms ease-out 0s 1 slideFromTop;
+          animation: 800ms ease-out 0s 1 slideFromTop;
+}
+
 @-webkit-keyframes slideFromLeft {
   0% {
     -webkit-transform: translateX(-50%);
@@ -325,6 +330,32 @@ html {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideFromTop {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }

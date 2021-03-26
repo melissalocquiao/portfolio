@@ -10,6 +10,10 @@
   animation: 800ms ease-out 0s 1 slideFromRight;
 }
 
+.animate-top {
+  animation: 800ms ease-out 0s 1 slideFromTop;
+}
+
 @keyframes slideFromLeft {
     0% {
       transform: translateX(-50%);
@@ -41,4 +45,15 @@
     transform: translateX(0);
     opacity: 1;
   }   
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }  
 }
