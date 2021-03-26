@@ -55,14 +55,23 @@
 
 .education-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content: space-between;
+
+    @include ipadMQ {
+        flex-direction: column;
+        justify-content: around;
+    }
 
     .education {
         margin-bottom: 5%;
+        width: 40%;
         
         .underline {
             border-bottom: 4px solid $yellow;
+        }
+
+        @include ipadMQ {
+            width: 100%;
         }
     }
 
