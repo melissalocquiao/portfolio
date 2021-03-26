@@ -579,7 +579,6 @@ nav ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 20px;
 }
 
 nav li {
@@ -619,34 +618,6 @@ nav li a {
 .menu .open-button {
   background-color: transparent;
   border: none;
-}
-
-.social-links {
-  width: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-@media (max-width: 1024px) {
-  .social-links {
-    width: 20%;
-  }
-}
-
-@media (max-width: 750px) {
-  .social-links {
-    width: 30%;
-  }
-}
-
-@media (max-width: 450px) {
-  .social-links {
-    display: none;
-  }
 }
 
 .home {
@@ -1353,6 +1324,14 @@ form input[type=text] {
 
 form textarea {
   border: 3px solid #ffe066;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .sidebar {

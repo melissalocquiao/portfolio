@@ -29,7 +29,6 @@ nav {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        padding: 20px;
     }
     
     li {
@@ -63,23 +62,5 @@ nav {
     .open-button {
         background-color: transparent;
         border: none;
-    }
-}
-
-.social-links {
-    width: 15%;
-    display: flex;
-    justify-content: space-evenly;
-
-    @include ipadMQ {
-        width: 20%;
-    }
-
-    @include large-phoneMQ {
-        width: 30%;
-    }
-
-    @include small-phoneMQ {
-        display: none;
     }
 }
