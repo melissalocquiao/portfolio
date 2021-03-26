@@ -382,7 +382,7 @@ h1, h2, h3, p, input, textarea, button {
 
 h1 {
   font-size: 6.25vw;
-  line-height: 70px;
+  line-height: 7rem;
 }
 
 h2 {
@@ -391,7 +391,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6vw;
+  font-size: 2vw;
   font-weight: 400;
 }
 
@@ -417,14 +417,8 @@ a {
 }
 
 .underline {
-  border-bottom: 12px solid #ffe066;
+  border-bottom: 1.2rem solid #ffe066;
   display: inline-block;
-}
-
-@media (max-width: 1024px) {
-  .underline {
-    line-height: normal;
-  }
 }
 
 nav a:after,
@@ -662,14 +656,33 @@ nav li a {
   margin: 0;
 }
 
+@media (max-width: 450px) {
+  .home h1 {
+    font-size: 7vw;
+    line-height: 3rem;
+  }
+}
+
 .home h2 {
   font-size: 5.7vw;
   font-weight: 200;
   margin-bottom: 0;
 }
 
+@media (max-width: 450px) {
+  .home h2 {
+    font-size: 7vw;
+  }
+}
+
 .home h3 {
   text-align: right;
+}
+
+@media (max-width: 450px) {
+  .home h3 {
+    font-size: 4vw;
+  }
 }
 
 .home .img-container {

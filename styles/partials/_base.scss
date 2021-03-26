@@ -22,7 +22,7 @@
 
   h1 {
     font-size: 6.25vw;
-    line-height: 70px;
+    line-height: 7rem;
   }
 
   h2 {
@@ -31,7 +31,7 @@
   }
   
   h3 {
-    font-size: 1.6vw;
+    font-size: 2vw;
     font-weight: 400;
   }
   
@@ -57,12 +57,8 @@
   }
 
   .underline {
-    border-bottom: 12px solid $yellow;
+    border-bottom: 1.2rem solid $yellow;
     display: inline-block;
-    
-    @include ipadMQ {
-      line-height: normal;
-    }
   }
 
   nav a:after, 
