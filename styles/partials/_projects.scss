@@ -1,8 +1,27 @@
+.projects {
+    h2 {
+        @include small-phoneMQ {
+            font-size: 6vw;
+        }
+    }
+}
 .projects-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 20px;
+
+
+    @include ipadMQ {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include small-phoneMQ {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .project-container {
@@ -12,9 +31,27 @@
     justify-content: center;
     text-align: center;
 
+    @include ipadMQ {
+        width: 40%;
+        margin-bottom: 5%;
+        margin: 0 5% 5% 5%
+    }
+    
+    @include small-phoneMQ {
+        width: 80%;
+    }
+
     img {
         width: 80%;
         transition: transform .5s;
+
+        @include ipadMQ {
+            width: 100%;
+        }
+
+        @include small-phoneMQ {
+            display: none;
+        }
     }
 
     img:hover {
@@ -23,6 +60,15 @@
 
     h3 {
         margin: 10px;
+
+        @include ipadMQ {
+            font-size: 4vw;
+        }
+
+        @include small-phoneMQ {
+            font-size: 5vw;
+            margin: 5px;
+        }
     }
 
     a {
@@ -31,21 +77,40 @@
 
     .underline {
         border-bottom: 4px solid $yellow;
+
+        @include small-phoneMQ {
+            border-bottom: none;
+        }
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1vw;
         margin: auto;
         line-height: 2rem;
+
+        @include ipadMQ {
+            font-size: 2vw;
+            line-height: 3rem;
+        }
+
+        @include small-phoneMQ {
+            line-height: 1.7rem;
+            font-size: 3vw;
+        }
+
     }
     
     .icons {
         display: flex;
         justify-content: center;
         img {
-            width: 45px;
-            height: 45px;
+            width: 10%;
+            height: 10%;
             padding: 5px;
+
+            @include ipadMQ {
+                font-size: 4vw;
+            }
         }
     }
 
@@ -53,6 +118,23 @@
         p {
             display: inline-block;
             padding: 5px 10px;
+
+            @include ipadMQ {
+                font-size: 2vw;
+            }
+            
+            @include small-phoneMQ {
+                font-size: 3vw;
+                background-color: $yellow;
+                border-radius: 5px;
+                padding: 8px 10px 5px;
+                margin: 10px;
+            }
+
+            @include xs-phoneMQ {
+                margin: 5px;
+                padding: 5px 8px 3px;
+            }
         }
     }
 }

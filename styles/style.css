@@ -463,6 +463,18 @@ section {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  section {
+    top: 15vw;
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    top: 15vh;
+  }
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,6 +549,12 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: auto;
+  }
 }
 
 .logo {
@@ -721,7 +739,7 @@ nav li a {
 
 .about p {
   text-align: justify;
-  margin-bottom: 0;
+  margin-bottom: 5%;
 }
 
 @media (max-width: 1024px) {
@@ -841,6 +859,7 @@ nav li a {
 
 .skills h2 {
   margin-bottom: 20px;
+  font-size: 2.6vw;
 }
 
 @media (max-width: 1024px) {
@@ -851,16 +870,7 @@ nav li a {
 
 .skills-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 10%;
 }
 
 .skill-container {
@@ -869,11 +879,11 @@ nav li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 10%;
   width: 45%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 1280px) {
@@ -896,18 +906,16 @@ nav li a {
 
 .skill-container img {
   width: 8%;
-  height: 8%;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
-  margin: 15px;
+  margin: 0 15px;
 }
 
 @media (max-width: 1024px) {
   .skill-container img {
     width: 12%;
-    height: 12%;
   }
 }
 
@@ -915,7 +923,6 @@ nav li a {
   .skill-container img {
     margin: 5px;
     width: 15%;
-    height: 15%;
   }
 }
 
@@ -948,6 +955,10 @@ nav li a {
 .education-container h3, .education-container p {
   margin: 0;
   text-align: center;
+}
+
+.education-container h3 {
+  font-size: 2vw;
 }
 
 @media (max-width: 1024px) {
@@ -986,6 +997,12 @@ nav li a {
   }
 }
 
+@media (max-width: 450px) {
+  .projects h2 {
+    font-size: 6vw;
+  }
+}
+
 .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,6 +1014,30 @@ nav li a {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .projects-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .projects-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .project-container {
@@ -1014,12 +1055,38 @@ nav li a {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .project-container {
+    width: 40%;
+    margin-bottom: 5%;
+    margin: 0 5% 5% 5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-container {
+    width: 80%;
+  }
+}
+
 .project-container img {
   width: 80%;
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+}
+
+@media (max-width: 1024px) {
+  .project-container img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-container img {
+    display: none;
+  }
 }
 
 .project-container img:hover {
@@ -1031,6 +1098,19 @@ nav li a {
   margin: 10px;
 }
 
+@media (max-width: 1024px) {
+  .project-container h3 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-container h3 {
+    font-size: 5vw;
+    margin: 5px;
+  }
+}
+
 .project-container a {
   display: inline-block;
 }
@@ -1039,10 +1119,30 @@ nav li a {
   border-bottom: 4px solid #ffe066;
 }
 
+@media (max-width: 450px) {
+  .project-container .underline {
+    border-bottom: none;
+  }
+}
+
 .project-container p {
-  font-size: 1.3rem;
+  font-size: 1vw;
   margin: auto;
   line-height: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .project-container p {
+    font-size: 2vw;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-container p {
+    line-height: 1.7rem;
+    font-size: 3vw;
+  }
 }
 
 .project-container .icons {
@@ -1055,14 +1155,43 @@ nav li a {
 }
 
 .project-container .icons img {
-  width: 45px;
-  height: 45px;
+  width: 10%;
+  height: 10%;
   padding: 5px;
+}
+
+@media (max-width: 1024px) {
+  .project-container .icons img {
+    font-size: 4vw;
+  }
 }
 
 .project-container .links p {
   display: inline-block;
   padding: 5px 10px;
+}
+
+@media (max-width: 1024px) {
+  .project-container .links p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-container .links p {
+    font-size: 3vw;
+    background-color: #ffe066;
+    border-radius: 5px;
+    padding: 8px 10px 5px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-container .links p {
+    margin: 5px;
+    padding: 5px 8px 3px;
+  }
 }
 
 .contact h2 {

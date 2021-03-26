@@ -74,7 +74,7 @@
   nav a:hover:after, 
   .social-links a:hover:after,
   .project-container .text-container a:hover:after {
-    transform: scaleX(1);   
+    transform: scaleX(1); 
   }
 
   .skills, .projects {
@@ -98,6 +98,14 @@
     height: 80vh;
     top: 20vh;
     position: relative;
+
+    @include ipadMQ {
+      top: 15vw;
+    }
+
+    @include small-phoneMQ {
+        top: 15vh;
+    }
   }
 
   .container {

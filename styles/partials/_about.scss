@@ -1,4 +1,5 @@
 .about {
+
     h2 {
         margin-bottom: 20px;
         margin-right: 20px;
@@ -16,7 +17,7 @@
 
     p {
         text-align: justify;
-        margin-bottom: 0;
+        margin-bottom: 5%;
 
         @include ipadMQ {
             font-size: 2vw;
