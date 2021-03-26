@@ -8,6 +8,7 @@
 
     p {
         text-align: justify;
+        margin-bottom: 0;
     }
 
     .flex-container {
@@ -26,7 +27,8 @@
         width: 55%;
 
         .button {
-            width: 40%;
+            width: 30%;
+            float: right;
         }
     }
 }

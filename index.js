@@ -1,5 +1,29 @@
 const portfolioApp = {};
 
+const aboutButton = document.querySelector('.about .button');
+
+portfolioApp.goToContact = () => {
+    aboutButton.addEventListener('click', function(event){
+        event.preventDefault();
+        const contactSection = document.querySelector('.contact');
+        contactSection.scrollIntoView({ behavior: "smooth" });
+    }) 
+}
+
+document.querySelector("form").addEventListener("submit", portfolioApp.handleSubmit);
+
+portfolioApp.handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('form');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
+
 portfolioApp.addListeners = () => {
     const home = document.querySelector('.logo a');
     const liItem = document.querySelectorAll('nav a');

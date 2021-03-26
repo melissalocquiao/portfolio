@@ -55,7 +55,7 @@
                                     experience. When I'm not baking, I am challenging myself by mastering new tools to
                                     create meaningful and engaging web applications. I am constantly adding new ideas to
                                     my long list of projects to complete and I am open to collaborating!</p>
-                                    <button onClick="goToContact()" class="button">Let's Chat!</button>
+                                    <button onClick="portfolioApp.goToContact()" class="button">Let's Chat!</button>
                             </div>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <form action="#" class="form">
+                            <form method="POST" class="form" name="contact" data-netlify="true" id="form">
                                 <div class="input-container">
                                     <label for="name" class="visuallyHidden">Name</label>
                                     <input type="text" name="name" id="name" placeholder="Name">
