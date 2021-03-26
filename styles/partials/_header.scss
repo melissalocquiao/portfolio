@@ -32,10 +32,18 @@ nav {
     li a {
         letter-spacing: 0.2rem;
     }
+
+    @include ipadMQ {
+        width: 60%;
+    }
 }
 
 .social-links {
     width: 15%;
     display: flex;
     justify-content: space-evenly;
+
+    @include ipadMQ {
+        width: 20%;
+    }
 }

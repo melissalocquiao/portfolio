@@ -1,8 +1,12 @@
 .home {
     display: flex;
     justify-content: space-evenly;
-    overflow: hidden;
-    // align-items: center;
+    
+    @include ipadMQ {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
     .text-container {
         width: 40%;
@@ -25,6 +29,10 @@
     
     .img-container { 
         width: 28%;
+
+        @include ipadMQ {
+            width: 40%;
+        }
 
         img {
             border: 8px solid $yellow;

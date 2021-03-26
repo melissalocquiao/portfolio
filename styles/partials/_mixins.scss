@@ -1,3 +1,9 @@
 @mixin box-shadow {
     box-shadow: 15px 15px 0px 0px $yellow;
 }
+
+@mixin ipadMQ {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
