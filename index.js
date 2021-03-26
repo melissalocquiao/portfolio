@@ -34,7 +34,7 @@ portfolioApp.addListeners = () => {
     const aboutText = document.querySelector('.about .flex-container .text-container');
     const aboutHeading = document.querySelector('.about h2');
 
-    const skillsText = document.querySelector('.skills .skills-wrapper');
+    const skillsText = document.querySelector('.skills .skills-container');
     const educationText = document.querySelector('.skills .education-wrapper');
 
     const projectLaptop = document.querySelector('.projects .laptop');

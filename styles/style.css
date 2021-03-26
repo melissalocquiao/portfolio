@@ -451,14 +451,14 @@ img {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
 }
 
 section {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   top: 20vh;
   position: relative;
 }
@@ -549,7 +549,7 @@ nav, .social-links, .logo {
 }
 
 nav {
-  width: 40%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,6 +563,10 @@ nav {
 
 nav li {
   list-style: none;
+}
+
+nav li a {
+  letter-spacing: 0.2rem;
 }
 
 .social-links {
@@ -633,7 +637,7 @@ nav li {
 }
 
 .about .img-container {
-  width: 35%;
+  width: 40%;
 }
 
 .about .img-container img {
@@ -643,11 +647,14 @@ nav li {
 
 .about .text-container {
   width: 55%;
+  position: relative;
 }
 
 .about .text-container .button {
   width: 30%;
-  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .skills h2 {
@@ -655,18 +662,23 @@ nav li {
 }
 
 .skills-container {
-  margin-bottom: 40px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .skill-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
 }
 
 .skill-container img {
-  width: 80px;
-  height: 80px;
+  width: 12%;
+  height: 12%;
   padding: 15px;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
@@ -686,6 +698,18 @@ nav li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.education-container .education {
+  margin-bottom: 5%;
+}
+
+.education-container .education .underline {
+  border-bottom: 4px solid #ffe066;
 }
 
 .education-container h3, .education-container p {
@@ -750,7 +774,6 @@ nav li {
   font-size: 1.3rem;
   margin: auto;
   line-height: 2rem;
-  padding-top: 10px;
 }
 
 .project-container .icons {
@@ -763,9 +786,14 @@ nav li {
 }
 
 .project-container .icons img {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   padding: 5px;
+}
+
+.project-container .links p {
+  display: inline-block;
+  padding: 5px 10px;
 }
 
 .contact h2 {

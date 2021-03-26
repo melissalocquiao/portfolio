@@ -17,7 +17,7 @@
     }
 
     .img-container {
-        width: 35%;
+        width: 40%;
         
         img {
             @include box-shadow;
@@ -25,10 +25,13 @@
     }
     .text-container {
         width: 55%;
+        position: relative;
 
         .button {
             width: 30%;
-            float: right;
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
 }

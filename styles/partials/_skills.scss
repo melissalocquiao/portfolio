@@ -5,15 +5,18 @@
 }
 
 .skills-container {
-    margin-bottom: 40px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .skill-container {
     display: flex;
+    align-items: center;
+    margin-bottom: 40px;
     
     img {
-        width: 80px;
-        height: 80px;
+        width: 12%;
+        height: 12%;
         padding: 15px;
         transition: transform .2s;
     }
@@ -26,7 +29,15 @@
 .education-container {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 
+    .education {
+        margin-bottom: 5%;
+        
+        .underline {
+            border-bottom: 4px solid $yellow;
+        }
+    }
 
     h3, p {
         margin: 0;
