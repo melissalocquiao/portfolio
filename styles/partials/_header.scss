@@ -35,15 +35,3 @@ nav {
     display: flex;
     justify-content: space-evenly;
 }
-
-nav a:after, .social-links a:after {
-    display: block;
-    content: '';
-    border-bottom: solid 3px $yellow;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-}
-
-nav a:hover:after, .social-links a:hover:after {
-    transform: scaleX(1);   
-}

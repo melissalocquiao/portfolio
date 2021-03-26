@@ -17,10 +17,10 @@
             </a>
         </div>
         <nav>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact Me</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </nav>
         <div class="social-links">
             <a href="https://github.com/melissalocquiao"><i class="fab fa-github"></i></a>
@@ -32,26 +32,175 @@
         <div class="horizontal-scroll">
             <div class="container">
                 <section class="home" id="home">
-                    <div class="text-container">
+                    <div class="text-container animate-left">
                         <h2><span class="light-heading">Hello!</span></h2>
                         <h1>I'm <span class="underline">Melissa</span></h1>
                         <h3>Front End Web Developer</h3>
                     </div>
-                    <div class="img-container">
+                    <div class="img-container animate-bottom">
                         <img src="./assets/profile-home.png" alt="picture of melissa">
                     </div>
                 </section>
-                <section class="about" id="about">
-                    <h2>About Me</h2>
+                <section class="about wrapper" id="about">
+                    <div class="wrapper">
+                        <h2><span class="underline">About Me</span></h2>
+                        <div class="flex-container">
+                            <div class="img-container">
+                                <img src="./assets/profile-about.jpg" alt="melissa in rome">
+                            </div>
+                            <div class="text-container">
+                                <p>I'm a computer science graduate focused in front end development and a self-taught
+                                    baker based out of Toronto. As a small business owner and web developer, I show my
+                                    passion and creativity through the products I create and strive for the best user
+                                    experience. When I'm not baking, I am challenging myself by mastering new tools to
+                                    create meaningful and engaging web applications. I am constantly adding new ideas to
+                                    my long list of projects to complete and I am open to collaborating!</p>
+                                    <button onClick="goToContact()" class="button">Let's Chat!</button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="skills" id="skills">
-                    <h2>Skills</h2>
+                    <div class="flex-column wrapper">
+                        <div class="skills-wrapper">
+                            <h2><span class="underline">Skills</span></h2>
+                            <div class="skills-container">
+                                <div class="skill-container">
+                                    <img src="./assets/html-icon.png" alt="">
+                                    <img src="./assets/css-icon.png" alt="">
+                                    <img src="./assets/sass-icon.png" alt="">
+                                    <img src="./assets/javascript-icon.png" alt="">
+                                    <img src="./assets/jquery-icon.png" alt="">
+                                    <img src="./assets/responsive-icon.png" alt="">
+                                    <img src="./assets/accessibility-icon.png" alt="">
+                                </div>
+                                <div class="skill-container">
+                                    <img src="./assets/git-icon.png" alt="">
+                                    <img src="./assets/react-icon.png" alt="">
+                                    <img src="./assets/api-icon.png" alt="">
+                                    <img src="./assets/firebase-icon.png" alt="">
+                                    <img src="./assets/java-icon.png" alt="">
+                                    <img src="./assets/sql-icon.png" alt="">
+                                    <img src="./assets/c-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-wrapper">
+                        <h2><span class="underline">Education</span></h2>
+                        <div class="education-container">
+                            <div class="education">
+                                <h3>Brock University</h3>
+                                <p>Honours BSc in Computer Science with Co-op</p>
+                                <p>2014 - 2019</p>
+                            </div>
+                            <div class="education">
+                                <h3>Juno College</h3>
+                                <p>Web Development Immersive Bootcamp</p>
+                                <p>2021</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="projects" id="projects">
-                    <h2>Projects</h2>
+                    <div class="wrapper">
+                        <h2><span class="underline">Projects</span></h2>
+                        <div class="projects-container">
+                            <div class="project-container laptop">
+                                <a href="https://mels-cookie-dough-co-shop.netlify.com">
+                                    <img src="./assets/laptop-mockup1.png" alt="laptop mockup of mel's ecommerce shop">
+                                </a>
+                                <div class="text-container">
+                                    <h3><span class="underline">Mel's Shop</span></h3>
+                                    <div class="icons">
+                                        <img src="./assets/javascript-icon.png" alt="javascript">
+                                        <img src="./assets/firebase-icon.png" alt="firebase">
+                                        <img src="./assets/react-icon.png" alt="react">
+                                        <img src="./assets/responsive-icon.png" alt="responsive design">
+                                    </div>
+                                    <p>Mel's Cookie Dough Co. is an ecommerce shop where you can order my desserts and
+                                        add and remove items from your cart.</p>
+                                </div>
+                            </div>
+                            <div class="project-container ipad">
+                                <a href="https://popsipoll.netlify.com">
+                                    <img src="./assets/ipad-mockup1.png" alt="ipad mockup of popsipoll website">
+                                </a>
+                                <div class="text-container">
+                                    <h3><span class="underline">Popsipoll</span></h3>
+                                    <div class="icons">
+                                        <img src="./assets/react-icon.png" alt="react">
+                                        <img src="./assets/firebase-icon.png" alt="firebase">
+                                        <img src="./assets/javascript-icon.png" alt="javascript">
+                                        <img src="./assets/responsive-icon.png" alt="responsive design">
+                                    </div>
+                                    <p>Created with <a href="https://camduffin.com">Cam</a>, <a
+                                            href="https://jakeisbaek.com">Jake</a>, <a
+                                            href="https://ferncodes.com/">Fernanda</a>.</p>
+                                    <p>Popsipoll is a website that allows you to create an anonymous poll and share your
+                                        poll with friends.</p>
+                                </div>
+                            </div>
+                            <div class="project-container desktop">
+                                <a href="https://maryam-melissa-project-2.netlify.com/landingpage">
+                                    <img src="./assets/desktop-mockup1.png" alt="desktop mockup of flix finder website">
+                                </a>
+                                <div class="text-container">
+                                    <h3><span class="underline">Flix Finder</span></h3>
+                                    <div class="icons">
+                                        <img src="./assets/sass-icon.png" alt="sass">
+                                        <img src="./assets/responsive-icon.png" alt="responsive design">
+                                        <img src="./assets/javascript-icon.png" alt="sass">
+                                    </div>
+                                    <p>Created with <a href="https://maryamshahnawaz.com">Maryam</a>.</p>
+                                    <p>Flix Finder is a website created to find movies with your favorite actor and
+                                        genre.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="contact" id="contact">
-                    <h2>Contact</h2>
+                    <div class="wrapper">
+                        <h2><span class="underline">Contact</span></h2>
+                        <div class="flex-container">
+                            <div class="contact-container">
+                                <div class="img-container">
+                                    <img src="./assets/contact-profile.jpg" alt="">
+                                </div>
+                                <div class="text-container">
+                                    <h3>I'd love to chat!</h3>
+
+                                    <div class="inline">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p>Toronto, Ontario</p>
+                                    </div>
+                                    <div class="inline">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <p>647-774-1728</p>
+                                    </div>
+                                    <div class="inline">
+                                        <i class="far fa-envelope"></i>
+                                        <p>melissalocquiao@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#" class="form">
+                                <div class="input-container">
+                                    <label for="name" class="visuallyHidden">Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                </div>
+                                <div class="input-container">
+                                    <label for="email" class="visuallyHidden">Email</label>
+                                    <input type="text" placeholder="Email" id="email">
+                                </div>
+                                <textarea name="comment" rows="5" id="comment" placeholder="Comment"></textarea>
+                                <div class="submit-button">
+                                    <input class="button" type="submit" value="Let's Talk">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </section>
 
             </div>

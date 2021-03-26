@@ -1,0 +1,47 @@
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.project-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    img {
+        width: 80%;
+    }
+
+    h3 {
+        margin: 10px;
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    .underline {
+        border-bottom: 4px solid $yellow;
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin: auto;
+        line-height: 2rem;
+        padding-top: 10px;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+        }
+    }
+}

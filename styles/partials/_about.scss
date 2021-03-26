@@ -1,3 +1,32 @@
 .about {
 
+    h2 {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-container {
+        width: 35%;
+        
+        img {
+            @include box-shadow;
+        }
+    }
+    .text-container {
+        width: 55%;
+
+        .button {
+            width: 40%;
+        }
+    }
 }
