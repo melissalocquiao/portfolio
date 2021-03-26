@@ -16,6 +16,11 @@ header {
 .logo {
     width: 100px;
     height: 100px;
+
+    @include xs-smallPhoneMQ {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 nav, .social-links, .logo, .menu {
