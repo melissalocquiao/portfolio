@@ -59,6 +59,10 @@
   .underline {
     border-bottom: 12px solid $yellow;
     display: inline-block;
+    
+    @include ipadMQ {
+      line-height: normal;
+    }
   }
 
   nav a:after, 

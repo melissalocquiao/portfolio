@@ -34,6 +34,10 @@
             width: 40%;
         }
 
+        @include small-phoneMQ {
+            width: 60%;
+        }
+
         img {
             border: 8px solid $yellow;
             padding: 10px;

@@ -7,3 +7,15 @@
         @content;
     }
 }
+
+@mixin large-phoneMQ {
+    @media (max-width: 750px) {
+        @content;
+    }
+}
+
+@mixin small-phoneMQ {
+    @media (max-width: 450px) {
+        @content;
+    }
+}

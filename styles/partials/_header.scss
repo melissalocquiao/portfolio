@@ -14,7 +14,7 @@ header {
     height: 100px;
 }
 
-nav, .social-links, .logo {
+nav, .social-links, .logo, .menu {
     padding: 20px;
 }
 
@@ -36,6 +36,21 @@ nav {
     @include ipadMQ {
         width: 60%;
     }
+
+    @include large-phoneMQ {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+
+    i {
+        font-size: 3rem;
+    }
+    @include large-phoneMQ {
+        display: block;
+    }
 }
 
 .social-links {
@@ -45,5 +60,13 @@ nav {
 
     @include ipadMQ {
         width: 20%;
+    }
+
+    @include large-phoneMQ {
+        width: 30%;
+    }
+
+    @include small-phoneMQ {
+        display: none;
     }
 }
