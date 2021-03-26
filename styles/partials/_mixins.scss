@@ -2,6 +2,12 @@
     box-shadow: 15px 15px 0px 0px $yellow;
 }
 
+@mixin laptopMQ {
+    @media (max-width: 1280px) {
+        @content;
+    }
+}
+
 @mixin ipadMQ {
     @media (max-width: 1024px) {
         @content;
@@ -19,3 +25,9 @@
         @content;
     }
 }
+
+@mixin xs-phoneMQ {
+    @media(max-width: 400px) {
+        @content;
+    }
+} 

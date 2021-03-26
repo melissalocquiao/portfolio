@@ -16,6 +16,16 @@
     p {
         text-align: justify;
         margin-bottom: 0;
+
+        @include small-phoneMQ {
+            font-size: 4.5vw;
+            line-height: 2.5rem;
+            margin-bottom: 10%;
+        }
+
+        @include xs-phoneMQ {
+            font-size: 3.2vw;
+        }
     }
 
     .flex-container {
@@ -27,6 +37,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
+        }
+        @include small-phoneMQ {
+            justify-content: flex-start;
         }
     }
 
@@ -46,10 +59,7 @@
         }
 
         @include small-phoneMQ {
-            img 
-            {
-                box-shadow: none;
-            }  
+            display: none;
         }
     }
     .text-container {
@@ -64,13 +74,6 @@
             width: 80%;
         }
 
-        p {
-            @include small-phoneMQ {
-                font-size: 4vw;
-                line-height: 2.5rem;
-            }
-        }
-
         .button {
             width: 30%;
             position: absolute;
@@ -81,7 +84,7 @@
                 position: relative;                
             }
             @include small-phoneMQ {
-                display: none;
+                width: 100%;
             }
         }
     }

@@ -723,6 +723,20 @@ nav li a {
   margin-bottom: 0;
 }
 
+@media (max-width: 450px) {
+  .about p {
+    font-size: 4.5vw;
+    line-height: 2.5rem;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .about p {
+    font-size: 3.2vw;
+  }
+}
+
 .about .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,6 +758,14 @@ nav li a {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media (max-width: 450px) {
+  .about .flex-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -769,9 +791,8 @@ nav li a {
 }
 
 @media (max-width: 450px) {
-  .about .img-container img {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+  .about .img-container {
+    display: none;
   }
 }
 
@@ -792,13 +813,6 @@ nav li a {
   }
 }
 
-@media (max-width: 450px) {
-  .about .text-container p {
-    font-size: 4vw;
-    line-height: 2.5rem;
-  }
-}
-
 .about .text-container .button {
   width: 30%;
   position: absolute;
@@ -814,7 +828,7 @@ nav li a {
 
 @media (max-width: 450px) {
   .about .text-container .button {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -823,28 +837,49 @@ nav li a {
 }
 
 .skills-container {
-  margin: 0 auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skill-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 40px;
+  width: 45%;
+}
+
+@media (max-width: 1280px) {
+  .skill-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skill-container {
+    width: 65%;
+  }
 }
 
 .skill-container img {
-  width: 12%;
-  height: 12%;
-  padding: 15px;
+  width: 5rem;
+  height: 5rem;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
+  margin: 15px;
 }
 
 .skill-container img:hover {
