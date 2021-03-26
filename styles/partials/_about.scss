@@ -6,6 +6,7 @@
         
         @include ipadMQ {
             text-align: center;
+            font-size: 6vw;
         }
 
         @include small-phoneMQ {
@@ -16,6 +17,10 @@
     p {
         text-align: justify;
         margin-bottom: 0;
+
+        @include ipadMQ {
+            font-size: 2vw;
+        }
 
         @include small-phoneMQ {
             font-size: 4.5vw;

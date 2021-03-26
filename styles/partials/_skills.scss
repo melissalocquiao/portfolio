@@ -1,6 +1,9 @@
 .skills {
     h2 {
         margin-bottom: 20px;
+        @include ipadMQ {
+            font-size: 6vw;
+        }
     }
 }
 
@@ -14,8 +17,9 @@
 .skill-container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 10%;
     width: 45%;
+    justify-content: center;
 
     @include laptopMQ {
         width: 50%;
@@ -24,13 +28,28 @@
     @include ipadMQ {
         width: 65%;
     }
+
+    @include small-phoneMQ {
+        width: 80%;
+    }
+
     
     img {
-        width: 5rem;
-        height: 5rem;
-        // padding: 15px;
+        width: 8%;
+        height: 8%;
         transition: transform .2s;
         margin: 15px;
+        
+        @include ipadMQ {
+            width: 12%;
+            height: 12%;
+        }
+
+        @include small-phoneMQ {
+            margin: 5px;
+            width: 15%;
+            height: 15%;
+        }
     }
 
     img:hover {
@@ -54,5 +73,33 @@
     h3, p {
         margin: 0;
         text-align: center;
+    }
+
+    h3 {
+        @include ipadMQ {
+            font-size: 3.5vw;
+        }
+
+        @include small-phoneMQ {
+            font-size: 5vw;
+        }
+
+        @include xs-phoneMQ {
+            font-size: 4.5vw;
+        }
+    }
+
+    p {
+        @include ipadMQ {
+            font-size: 2vw;
+        }
+
+        @include small-phoneMQ {
+            font-size: 4.5vw;
+        }
+
+        @include xs-phoneMQ {
+            font-size: 3.5vw;
+        }
     }
 }

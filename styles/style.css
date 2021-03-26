@@ -709,6 +709,7 @@ nav li a {
 @media (max-width: 1024px) {
   .about h2 {
     text-align: center;
+    font-size: 6vw;
   }
 }
 
@@ -721,6 +722,12 @@ nav li a {
 .about p {
   text-align: justify;
   margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .about p {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 450px) {
@@ -836,6 +843,12 @@ nav li a {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1024px) {
+  .skills h2 {
+    font-size: 6vw;
+  }
+}
+
 .skills-container {
   width: 100%;
   display: -webkit-box;
@@ -856,8 +869,11 @@ nav li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 10%;
   width: 45%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1280px) {
@@ -872,14 +888,35 @@ nav li a {
   }
 }
 
+@media (max-width: 450px) {
+  .skill-container {
+    width: 80%;
+  }
+}
+
 .skill-container img {
-  width: 5rem;
-  height: 5rem;
+  width: 8%;
+  height: 8%;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   margin: 15px;
+}
+
+@media (max-width: 1024px) {
+  .skill-container img {
+    width: 12%;
+    height: 12%;
+  }
+}
+
+@media (max-width: 450px) {
+  .skill-container img {
+    margin: 5px;
+    width: 15%;
+    height: 15%;
+  }
 }
 
 .skill-container img:hover {
@@ -911,6 +948,42 @@ nav li a {
 .education-container h3, .education-container p {
   margin: 0;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .education-container h3 {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .education-container h3 {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .education-container h3 {
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .education-container p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .education-container p {
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .education-container p {
+    font-size: 3.5vw;
+  }
 }
 
 .projects-container {
