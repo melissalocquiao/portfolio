@@ -727,7 +727,6 @@ nav li a {
 @media (max-width: 1024px) {
   .about h2 {
     text-align: center;
-    font-size: 6vw;
   }
 }
 
@@ -800,7 +799,7 @@ nav li a {
 
 @media (max-width: 1024px) {
   .about .img-container {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -862,7 +861,7 @@ nav li a {
   font-size: 2.6vw;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 450px) {
   .skills h2 {
     font-size: 6vw;
   }
@@ -963,7 +962,7 @@ nav li a {
 
 @media (max-width: 1024px) {
   .education-container h3 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 
@@ -1134,7 +1133,7 @@ nav li a {
 @media (max-width: 1024px) {
   .project-container p {
     font-size: 2vw;
-    line-height: 3rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -1198,6 +1197,19 @@ nav li a {
   margin-left: 5%;
 }
 
+@media (max-width: 1024px) {
+  .contact h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact h2 {
+    font-size: 6vw;
+  }
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1205,6 +1217,21 @@ nav li a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media (max-width: 1024px) {
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .contact-container {
@@ -1215,6 +1242,18 @@ nav li a {
   padding-top: 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-container {
+    display: none;
+  }
 }
 
 .contact-container .img-container {
@@ -1252,6 +1291,19 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  form {
+    width: 80%;
+    margin: 5%;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    width: 100%;
+  }
 }
 
 form input[type=text], form textarea {

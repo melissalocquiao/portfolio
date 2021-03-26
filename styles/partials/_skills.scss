@@ -3,7 +3,7 @@
         margin-bottom: 20px;
         font-size: 2.6vw;
 
-        @include ipadMQ {
+        @include small-phoneMQ {
             font-size: 6vw;
         }
     }
@@ -74,7 +74,7 @@
     h3 {
         font-size: 2vw;
         @include ipadMQ {
-            font-size: 3.5vw;
+            font-size: 3vw;
         }
 
         @include small-phoneMQ {

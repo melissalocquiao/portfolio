@@ -7,7 +7,6 @@
         
         @include ipadMQ {
             text-align: center;
-            font-size: 6vw;
         }
 
         @include small-phoneMQ {
@@ -53,7 +52,7 @@
         width: 40%;
 
         @include ipadMQ {
-            width: 60%;
+            width: 50%;
         }
 
         @include small-phoneMQ {
