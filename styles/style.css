@@ -461,7 +461,6 @@ section {
   height: 80vh;
   top: 20vh;
   position: relative;
-  overflow: hidden;
 }
 
 .container {
@@ -576,12 +575,6 @@ nav li a {
   }
 }
 
-@media (max-width: 750px) {
-  nav {
-    display: none;
-  }
-}
-
 .menu {
   display: none;
 }
@@ -631,6 +624,7 @@ nav li a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -712,6 +706,18 @@ nav li a {
   text-align: right;
 }
 
+@media (max-width: 1024px) {
+  .about h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .about h2 {
+    font-size: 6vw;
+  }
+}
+
 .about p {
   text-align: justify;
   margin-bottom: 0;
@@ -726,8 +732,35 @@ nav li a {
           justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+  .about .flex-container {
+    height: 60vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .about .img-container {
   width: 40%;
+}
+
+@media (max-width: 1024px) {
+  .about .img-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about .img-container {
+    width: 50%;
+  }
 }
 
 .about .img-container img {
@@ -735,9 +768,35 @@ nav li a {
           box-shadow: 15px 15px 0px 0px #ffe066;
 }
 
+@media (max-width: 450px) {
+  .about .img-container img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .about .text-container {
   width: 55%;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  .about .text-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about .text-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about .text-container p {
+    font-size: 4vw;
+    line-height: 2.5rem;
+  }
 }
 
 .about .text-container .button {
@@ -745,6 +804,18 @@ nav li a {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (max-width: 1024px) {
+  .about .text-container .button {
+    position: relative;
+  }
+}
+
+@media (max-width: 450px) {
+  .about .text-container .button {
+    display: none;
+  }
 }
 
 .skills h2 {

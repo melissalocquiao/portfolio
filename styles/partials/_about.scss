@@ -1,9 +1,16 @@
 .about {
-
     h2 {
         margin-bottom: 20px;
         margin-right: 20px;
         text-align: right;
+        
+        @include ipadMQ {
+            text-align: center;
+        }
+
+        @include small-phoneMQ {
+            font-size: 6vw;
+        }
     }
 
     p {
@@ -14,24 +21,68 @@
     .flex-container {
         display: flex;
         justify-content: space-between;
+
+        @include ipadMQ {
+            height: 60vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
     }
 
     .img-container {
         width: 40%;
+
+        @include ipadMQ {
+            width: 60%;
+        }
+
+        @include small-phoneMQ {
+            width: 50%;
+        }
         
         img {
             @include box-shadow;
+        }
+
+        @include small-phoneMQ {
+            img 
+            {
+                box-shadow: none;
+            }  
         }
     }
     .text-container {
         width: 55%;
         position: relative;
 
+        @include ipadMQ {
+            width: 60%;
+        }
+
+        @include small-phoneMQ {
+            width: 80%;
+        }
+
+        p {
+            @include small-phoneMQ {
+                font-size: 4vw;
+                line-height: 2.5rem;
+            }
+        }
+
         .button {
             width: 30%;
             position: absolute;
             bottom: 0;
             right: 0;
+            
+            @include ipadMQ {
+                position: relative;                
+            }
+            @include small-phoneMQ {
+                display: none;
+            }
         }
     }
 }

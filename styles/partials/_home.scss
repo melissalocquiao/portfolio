@@ -1,6 +1,7 @@
 .home {
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
     
     @include ipadMQ {
         flex-direction: column-reverse;
