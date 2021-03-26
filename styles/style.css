@@ -382,7 +382,6 @@ h1, h2, h3, p, input, textarea, button {
 
 h1 {
   font-size: 6.25vw;
-  line-height: 7rem;
 }
 
 h2 {
@@ -716,6 +715,10 @@ nav li a {
 .home .img-container img {
   border: 8px solid #ffe066;
   padding: 10px;
+}
+
+.home .underline {
+  border-bottom: 20px solid #ffe066;
 }
 
 .about h2 {
