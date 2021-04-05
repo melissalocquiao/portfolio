@@ -881,24 +881,6 @@ nav li a {
           align-items: center;
 }
 
-@media (max-width: 1280px) {
-  .skill-container {
-    width: 50%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .skill-container {
-    width: 85%;
-  }
-}
-
-@media (max-width: 450px) {
-  .skill-container {
-    width: 80%;
-  }
-}
-
 .skill-container img {
   width: 8%;
   height: 8%;
