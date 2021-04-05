@@ -132,6 +132,12 @@ portfolioApp.addListeners = () => {
             contactHeading.classList.remove('animate-bottom');
             contactImage.classList.remove('animate-bottom');
             contactForm.classList.remove('animate-right');
+            
+            /*Home Animations*/
+            if (link === '.home') {
+                homeText.classList.add('animate-left');
+                homeImage.classList.add('animate-bottom');
+            }
 
             /* About Animations */
             if (link === '.about') {

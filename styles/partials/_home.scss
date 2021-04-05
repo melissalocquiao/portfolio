@@ -1,6 +1,6 @@
 .home {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     overflow: hidden;
     
     @include ipadMQ {
@@ -11,37 +11,44 @@
 
     .text-container {
         width: 40%;
-    }
+        position: relative;
 
-    h1 {
-        margin: 0;
-
-        @include small-phoneMQ {
-            font-size: 7vw;
-            line-height: 3rem;
+        h1, h2, h3 {
+            z-index: 1;
+            position: relative;
         }
-    }
+
+        h1 {
+            margin: 0;
     
-    h2 {
-        font-size: 5.7vw;
-        font-weight: 200;
-        margin-bottom: 0;
-
-        @include small-phoneMQ {
-            font-size: 7vw;
+            @include small-phoneMQ {
+                font-size: 7vw;
+                line-height: 3rem;
+            }
+        }
+        
+        h2 {
+            font-size: 5.7vw;
+            font-weight: 200;
+            margin-bottom: 0;
+    
+            @include small-phoneMQ {
+                font-size: 7vw;
+            }
+        }
+    
+        h3 {
+            text-align: right;
+            @include small-phoneMQ {
+                font-size: 4vw;
+            }
         }
     }
-
-    h3 {
-        text-align: right;
-        @include small-phoneMQ {
-            font-size: 4vw;
-        }
-    }
-
     
     .img-container { 
-        width: 28%;
+        // width: 28%;
+        width: 40%;
+        position: relative;
 
         @include ipadMQ {
             width: 40%;
@@ -52,14 +59,14 @@
         }
 
         img {
-            border: 8px solid $yellow;
-            padding: 10px;
+            z-index: 1; 
+            position: absolute;
+            bottom: 0;
         }
+
     }
 
     .underline {
         border-bottom: 20px solid $yellow;
     }
 }
-
-

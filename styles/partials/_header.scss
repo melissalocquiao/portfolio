@@ -17,7 +17,7 @@ header {
     width: 100px;
     height: 100px;
 
-    @include xs-smallPhoneMQ {
+    @include xs-phoneMQ {
         width: 60px;
         height: 60px;
     }
