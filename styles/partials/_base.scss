@@ -11,8 +11,8 @@
     margin: 0;
     height: 100vh;
     color: $grey;
-    background-color: #C8E7FF;
-    // background: linear-gradient(160deg,#bee3db, #C8E7FF,#C0FDFF);
+    background-color: $blue;
+    // background: linear-gradient(160deg, #C8E7FF, $blue);
     overflow: hidden;
   }
 
