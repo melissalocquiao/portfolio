@@ -965,7 +965,7 @@ nav li a {
 }
 
 .skills h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 2.6vw;
 }
 
@@ -976,8 +976,7 @@ nav li a {
 }
 
 .skills-container {
-  width: 100%;
-  margin-bottom: 6%;
+  width: 80%;
 }
 
 .skill-container {
@@ -986,29 +985,12 @@ nav li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 45%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
-}
-
-@media (max-width: 1280px) {
-  .skill-container {
-    width: 50%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .skill-container {
-    width: 65%;
-  }
-}
-
-@media (max-width: 450px) {
-  .skill-container {
-    width: 80%;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skill-container img {
@@ -1039,87 +1021,6 @@ nav li a {
 .skill-container img:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
-}
-
-.education-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 1024px) {
-  .education-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: around;
-        -ms-flex-pack: around;
-            justify-content: around;
-  }
-}
-
-.education-container .education {
-  margin-bottom: 5%;
-  width: 40%;
-}
-
-.education-container .education .underline {
-  border-bottom: 4px solid #ffe066;
-}
-
-@media (max-width: 1024px) {
-  .education-container .education {
-    width: 100%;
-  }
-}
-
-.education-container h3, .education-container p {
-  margin: 0;
-  text-align: center;
-}
-
-.education-container h3 {
-  font-size: 2vw;
-}
-
-@media (max-width: 1024px) {
-  .education-container h3 {
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 450px) {
-  .education-container h3 {
-    font-size: 5vw;
-  }
-}
-
-@media (max-width: 400px) {
-  .education-container h3 {
-    font-size: 4.5vw;
-  }
-}
-
-@media (max-width: 1024px) {
-  .education-container p {
-    font-size: 2vw;
-  }
-}
-
-@media (max-width: 450px) {
-  .education-container p {
-    font-size: 4.5vw;
-  }
-}
-
-@media (max-width: 400px) {
-  .education-container p {
-    font-size: 3.5vw;
-  }
 }
 
 @media (max-width: 450px) {
