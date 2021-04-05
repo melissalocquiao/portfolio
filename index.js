@@ -65,7 +65,6 @@ portfolioApp.addListeners = () => {
 
     /* Skills Selectors */
     const skillsText = document.querySelector('.skills .skills-container');
-    const educationText = document.querySelector('.skills .education-wrapper');
 
     /* Projects Selectors */
     const projectLaptop = document.querySelector('.projects .laptop');
@@ -88,7 +87,6 @@ portfolioApp.addListeners = () => {
         aboutHeading.classList.remove('animate-right');
         aboutText.classList.remove('animate-right');
         skillsText.classList.remove('animate-top');
-        educationText.classList.remove('animate-bottom');
         projectLaptop.classList.remove('animate-left');
         projectIpad.classList.remove('animate-bottom');
         projectDesktop.classList.remove('animate-right');
@@ -116,14 +114,17 @@ portfolioApp.addListeners = () => {
             //Scroll to section
             const section = document.querySelector(link);
             section.scrollIntoView({ behavior: "smooth" });
-
+            
+            
             /* Remove animation classes */
+            homeText.classList.remove('animate-left');
+            homeImage.classList.remove('animate-bottom');
+
             aboutImage.classList.remove('animate-bottom');
             aboutHeading.classList.remove('animate-right');
             aboutText.classList.remove('animate-right');
 
             skillsText.classList.remove('animate-top');
-            educationText.classList.remove('animate-bottom');
 
             projectLaptop.classList.remove('animate-left');
             projectIpad.classList.remove('animate-bottom');
@@ -133,6 +134,10 @@ portfolioApp.addListeners = () => {
             contactImage.classList.remove('animate-bottom');
             contactForm.classList.remove('animate-right');
 
+            if (link === '.home') {
+                homeText.classList.add('animate-left');
+                homeImage.classList.add('animate-bottom');
+            }
             /* About Animations */
             if (link === '.about') {
                 aboutImage.classList.add('animate-bottom');
@@ -143,7 +148,6 @@ portfolioApp.addListeners = () => {
             /* Skills Animations */
             if (link === '.skills') {
                 skillsText.classList.add('animate-top');
-                educationText.classList.add('animate-bottom');
             }
 
             /* Project Animations */
