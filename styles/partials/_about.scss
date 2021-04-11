@@ -1,96 +1,16 @@
 .about {
-    h2 {
-        margin-bottom: 20px;
-        margin-right: 20px;
-        text-align: right;
-        
-        @include ipadMQ {
-            text-align: center;
-        }
-
-        @include small-phoneMQ {
-            font-size: 6vw;
-        }
-    }
-
-    p {
-        text-align: justify;
-        margin-bottom: 5%;
-
-        @include ipadMQ {
-            font-size: 2vw;
-        }
-
-        @include small-phoneMQ {
-            font-size: 4.5vw;
-            line-height: 2.5rem;
-            margin-bottom: 10%;
-        }
-
-        @include xs-phoneMQ {
-            font-size: 3.2vw;
-        }
-    }
-
-    .flex-container {
-        display: flex;
-        justify-content: space-between;
-
-        @include ipadMQ {
-            height: 60vh;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-        }
-        @include small-phoneMQ {
-            justify-content: flex-start;
-        }
-    }
-
-    .img-container {
-        width: 40%;
-
-        @include ipadMQ {
-            width: 50%;
-        }
-
-        @include small-phoneMQ {
-            width: 50%;
-        }
-        
-        img {
-            @include box-shadow;
-        }
-
-        @include small-phoneMQ {
-            display: none;
-        }
-    }
+    height: 100vh;
+    background: #b8f2e6;
+    z-index: 2;
+    position: relative;
+    padding: 5%;
     
-    .text-container {
-        width: 55%;
-        position: relative;
-
-        @include ipadMQ {
-            width: 60%;
-        }
-
-        @include small-phoneMQ {
-            width: 80%;
-        }
-
-        .button {
-            width: 30%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            
-            @include ipadMQ {
-                position: relative;                
-            }
-            @include small-phoneMQ {
-                width: 100%;
-            }
-        }
+    svg {
+        width: 40%;
     }
+
+    .text-container {
+        width: 50%;
+    }
+
 }

@@ -1,71 +1,39 @@
 header {
+    height: 100vh;
+    // background: linear-gradient(130deg, #b8f2e6, #80dbd5, #4ecdc4);
+    background: linear-gradient(130deg, #b8f2e6, #4ecdc4);
+    // background: linear-gradient(130deg, #f27158, #c05395, #ba4f9c);
+
+    padding: 5%;
+    position: relative;
+    z-index: 0;
+}
+
+.text-container {
+    height: 80vh;
     display: flex;
-    padding: 20px 0 20px 20px;
-    justify-content: space-between;
-    height: 20vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.oval {
     z-index: 1;
-
-    @include ipadMQ {
-        height: auto;
-    }
+    position: absolute;
+    top: -20vh;
+    right: -35vw;
+    width: 80vw;
+    height: 250vh;
+    background: linear-gradient(50deg, $yellow, #b8f2e6, #80dbd5);
+    // background: linear-gradient(60deg, #f27158, #aa49cf);
+    border-radius: 50%;
+    // animation: floatOne 5s infinite;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-
-    @include xs-phoneMQ {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-nav, .social-links, .logo, .menu {
-    padding: 20px;
-}
-
-nav {
-    width: 50%;
-    
-    ul {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-    }
-    
-    li {
-        list-style: none;
-    }
-    
-    li a {
-        letter-spacing: 0.2rem;
-    }
-
-    @include ipadMQ {
-        width: 60%;
-    }
-
-    @include large-phoneMQ {
-        display: none;
-    }
-}
-
-.menu {
-    display: none;
-
-    i {
-        font-size: 3rem;
-    }
-    
-    @include large-phoneMQ {
-        display: block;
-    }
-    
-    .open-button {
-        background-color: transparent;
-        border: none;
-    }
+.portrait-img {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    z-index: 2;
+    width: 45%;
 }

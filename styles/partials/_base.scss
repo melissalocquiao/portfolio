@@ -11,23 +11,30 @@
     margin: 0;
     height: 100vh;
     color: $grey;
-    background-color: $blue;
-    // background: linear-gradient(160deg, #C8E7FF, $blue);
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, p, input, textarea, button {
     font-family: $font;
-    color: $grey;
+    // color: $grey;
+    color: #434342;
+  }
+
+  h1, h2 {
+    text-transform: uppercase;
+    margin: 0;
   }
 
   h1 {
-    font-size: 6.25vw;
+    font-size: 6vw;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
   }
 
   h2 {
     font-size: 3vw;
     letter-spacing: 1.5px;
+    font-weight: 200;
   }
   
   h3 {
@@ -56,32 +63,32 @@
     text-decoration: none;
   }
 
-  .underline {
-    border-bottom: 1.2rem solid $yellow;
-    display: inline-block;
-  }
+  // .underline {
+  //   border-bottom: 1.2rem solid $yellow;
+  //   display: inline-block;
+  // }
 
-  nav a:after, 
-  .social-links a:after,
-  .project-container .text-container a:after {
-    display: block;
-    content: '';
-    border-bottom: solid 3px $yellow;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-  }
+  // nav a:after, 
+  // .social-links a:after,
+  // .project-container .text-container a:after {
+  //   display: block;
+  //   content: '';
+  //   border-bottom: solid 3px $yellow;
+  //   transform: scaleX(0);
+  //   transition: transform 250ms ease-in-out;
+  // }
 
-  nav a:hover:after, 
-  .social-links a:hover:after,
-  .project-container .text-container a:hover:after {
-    transform: scaleX(1); 
-  }
+  // nav a:hover:after, 
+  // .social-links a:hover:after,
+  // .project-container .text-container a:hover:after {
+  //   transform: scaleX(1); 
+  // }
 
-  .skills, .projects {
-    h2 {
-      text-align: center;
-    }
-  }
+  // .skills, .projects {
+  //   h2 {
+  //     text-align: center;
+  //   }
+  // }
 
   img { 
     width: 100%;
@@ -93,126 +100,140 @@
     margin: 0 auto;
   }
 
-  section {
-    width: 100vw;
-    height: 80vh;
-    top: 20vh;
-    position: relative;
-
-    @include ipadMQ {
-      top: 15vw;
-    }
-
-    @include small-phoneMQ {
-      top: 15vh;
-    }
-
-  }
-
-  .container {
+  .flex-row {
     display: flex;
-    width: 500vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-  }
-
-  .horizontal-scroll {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  ::-webkit-scrollbar {
-    display:none;
-  }
-
-  .about, .skills, .projects, .contact {
-    h2 {
-      margin: 0;
-    }
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .flex-column {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
   }
 
-  .button {
-    background-color: $yellow;
-    width: 100%;
-    padding: 1.2rem;
-    border: 0;
-    border-radius: 5px;
-    color: $grey;
-  }
+  // section {
+  //   width: 100vw;
+  //   height: 80vh;
+  //   top: 20vh;
+  //   position: relative;
 
-  .button:hover, .button:focus {
-    background-color: darken($yellow, 10%);
-  }
+  //   @include ipadMQ {
+  //     top: 15vw;
+  //   }
 
-  svg {
-    position: absolute;
-    opacity: 0.8;
-  }
+  //   @include small-phoneMQ {
+  //     top: 15vh;
+  //   }
 
-  .home .img-container .blob-one {
-    animation: floatOne 5s infinite;
-  }
+  // }
 
-  .home .blob-two  {
-    animation: floatTwo 4s infinite;
-  }
+  // .container {
+  //   display: flex;
+  //   width: 500vw;
+  //   transform: rotate(90deg) translateY(-100vh);
+  //   transform-origin: top left;
+  // }
 
-  .home .blob-three {
-    animation: floatThree 5s infinite;
-  }
+  // .horizontal-scroll {
+  //   width: 100vh;
+  //   height: 100vw;
+  //   transform: rotate(-90deg) translateX(-100vh);
+  //   transform-origin: top left;
+  //   overflow: hidden;
+  //   position: absolute;
+  //   scrollbar-width: none;
+  //   -ms-overflow-style: none;
+  // }
+  // ::-webkit-scrollbar {
+  //   display:none;
+  // }
+
+  // .about, .skills, .projects, .contact {
+  //   h2 {
+  //     margin: 0;
+  //   }
+  // }
+
+  // .flex-column {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  // .button {
+  //   background-color: $yellow;
+  //   width: 100%;
+  //   padding: 1.2rem;
+  //   border: 0;
+  //   border-radius: 5px;
+  //   color: $grey;
+  // }
+
+  // .button:hover, .button:focus {
+  //   background-color: darken($yellow, 10%);
+  // }
+
+  // svg {
+  //   position: absolute;
+  //   opacity: 0.8;
+  // }
+
+  // .home .img-container .blob-one {
+  //   animation: floatOne 5s infinite;
+  // }
+
+  // .home .blob-two  {
+  //   animation: floatTwo 4s infinite;
+  // }
+
+  // .home .blob-three {
+  //   animation: floatThree 5s infinite;
+  // }
 
   @keyframes floatOne {
     0% {
-      margin: -15px;
+      margin: -25px;
     }
     50% {
-      margin: 15px;
+      margin: 25px;
     }
     100% {
-      margin: -15px;
+      margin: -25px;
     }
   }
 
-  @keyframes floatTwo {
-    0% {
-      margin-right: 10px;
-    }
-    25% {
-      margin-top: 10px;
-    }
-    50% {
-      margin-left: -10px;
-    }
-    75% {
-      margin-bottom: -10px;
-    }
-    100% {
-      margin-right: 10px;
-    }
-  }
+  // @keyframes floatTwo {
+  //   0% {
+  //     margin-right: 10px;
+  //   }
+  //   25% {
+  //     margin-top: 10px;
+  //   }
+  //   50% {
+  //     margin-left: -10px;
+  //   }
+  //   75% {
+  //     margin-bottom: -10px;
+  //   }
+  //   100% {
+  //     margin-right: 10px;
+  //   }
+  // }
 
-  @keyframes floatThree {
-    0% {
-      margin: 30px;
-    }
-    100% {
-      margin: -30px;
-    }
-    100% {
-      margin: 30px;
-    }
-  }
+  // @keyframes floatThree {
+  //   0% {
+  //     margin: 30px;
+  //   }
+  //   100% {
+  //     margin: -30px;
+  //   }
+  //   100% {
+  //     margin: 30px;
+  //   }
+  // }
 
   
