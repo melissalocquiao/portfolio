@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
 
   html {
     font-size: 62.5%;
@@ -9,15 +10,22 @@
     font-size: 1.6rem;
     font-family: $font;
     margin: 0;
-    height: 100vh;
+    // height: 100vh;
     color: $grey;
     overflow-x: hidden;
   }
 
-  h1, h2, h3, p, input, textarea, button {
-    font-family: $font;
-    // color: $grey;
-    color: #434342;
+  header, section {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    color: $grey;
+    // color: $white;
+    // font-weight: 100;
   }
 
   h1, h2 {
@@ -28,7 +36,17 @@
   h1 {
     font-size: 6vw;
     letter-spacing: 10px;
-    margin-bottom: 30px;
+  }
+
+  section {
+    h2 {
+      background: -webkit-linear-gradient(90deg, #f9c6c9,
+      #c3c9ed,
+      #b3eefe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
   }
 
   h2 {
@@ -194,17 +212,17 @@
   //   animation: floatThree 5s infinite;
   // }
 
-  @keyframes floatOne {
-    0% {
-      margin: -25px;
-    }
-    50% {
-      margin: 25px;
-    }
-    100% {
-      margin: -25px;
-    }
-  }
+  // @keyframes floatOne {
+  //   0% {
+  //     margin: -25px;
+  //   }
+  //   50% {
+  //     margin: 25px;
+  //   }
+  //   100% {
+  //     margin: -25px;
+  //   }
+  // }
 
   // @keyframes floatTwo {
   //   0% {

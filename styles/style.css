@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -370,14 +371,19 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   margin: 0;
-  height: 100vh;
   color: #50514f;
   overflow-x: hidden;
 }
 
-h1, h2, h3, p, input, textarea, button {
-  font-family: "Poppins", sans-serif;
-  color: #434342;
+header, section {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #50514f;
 }
 
 h1, h2 {
@@ -388,7 +394,13 @@ h1, h2 {
 h1 {
   font-size: 6vw;
   letter-spacing: 10px;
-  margin-bottom: 30px;
+}
+
+section h2 {
+  background: -webkit-linear-gradient(90deg, #f9c6c9, #c3c9ed, #b3eefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 
 h2 {
@@ -463,86 +475,29 @@ img {
           align-items: center;
 }
 
-@-webkit-keyframes floatOne {
-  0% {
-    margin: -25px;
-  }
-  50% {
-    margin: 25px;
-  }
-  100% {
-    margin: -25px;
-  }
-}
-
-@keyframes floatOne {
-  0% {
-    margin: -25px;
-  }
-  50% {
-    margin: 25px;
-  }
-  100% {
-    margin: -25px;
-  }
-}
-
-header {
-  height: 100vh;
-  background: linear-gradient(130deg, #b8f2e6, #4ecdc4);
-  padding: 5%;
+.header {
+  width: 100vw;
+  background-image: linear-gradient(120deg, #f9c6c9, #e1a9e0, #c3c9ed, #b3eefe, #64dfdf);
+  background-size: 200%;
   position: relative;
-  z-index: 0;
 }
 
-.text-container {
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-}
-
-.oval {
-  z-index: 1;
-  position: absolute;
-  top: -20vh;
-  right: -35vw;
-  width: 80vw;
-  height: 250vh;
-  background: linear-gradient(50deg, #ffe066, #b8f2e6, #80dbd5);
-  border-radius: 50%;
-}
-
-.portrait-img {
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  z-index: 2;
+.header .text-container {
+  padding: 5%;
   width: 45%;
 }
 
+.header .img-container {
+  width: 45%;
+  display: fex;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
 .about {
-  height: 100vh;
-  background: #b8f2e6;
-  z-index: 2;
-  position: relative;
   padding: 5%;
-}
-
-.about svg {
-  width: 40%;
-}
-
-.about .text-container {
-  width: 50%;
+  background: #efefef;
 }
 
 .sidebar {

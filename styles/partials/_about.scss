@@ -1,16 +1,12 @@
 .about {
-    height: 100vh;
-    background: #b8f2e6;
-    z-index: 2;
-    position: relative;
     padding: 5%;
+    background: #efefef;
+    // background-image: url("./../assets/gradient.png");
+    // position: relative;
     
-    svg {
-        width: 40%;
-    }
-
-    .text-container {
-        width: 50%;
-    }
-
+    // h2 {
+    //     transform: rotate(90deg);
+    //     position: absolute;
+    //     left: 0;
+    // }
 }
